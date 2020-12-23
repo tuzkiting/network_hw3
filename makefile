@@ -1,7 +1,8 @@
-all: hw3
+all: hw3 hw3+
 
 hw3:hw3.c
 	g++ hw3.c -o hw3 -lpcap
+	g++ hw3+.c -o hw3+ -lpcap
 
 clean:
-	rm hw3
+	rm hw3 hw3+
